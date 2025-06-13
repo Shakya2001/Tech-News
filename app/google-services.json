@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "509489005028",
+    "project_id": "tech-news-ee74b",
+    "storage_bucket": "tech-news-ee74b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509489005028:android:2fb32b0f93f43afda907f1",
+        "android_client_info": {
+          "package_name": "com.example.technews"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUWni_jf1rnRMBdXeYkDps12B2KjmFM4s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
