@@ -45,7 +45,7 @@ public class Profile_Activity extends AppCompatActivity {
         }
 
         findViewById(R.id.home).setOnClickListener(v -> finish());
-        findViewById(R.id.dev).setOnClickListener(v -> startActivity(new Intent(this, Activity_Dev.class)));
+        findViewById(R.id.dev).setOnClickListener(v -> {startActivity(new Intent(this, Activity_Dev.class)); });
         findViewById(R.id.editinfo).setOnClickListener(v -> showEditInfoDialog());
         findViewById(R.id.signout).setOnClickListener(v -> signOutUser());
     }
