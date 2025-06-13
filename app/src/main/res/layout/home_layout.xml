@@ -5,88 +5,48 @@
     android:layout_height="match_parent"
     android:background="#EFF8FF">
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="57dp"
-        android:text="Developer Info"
-        android:textColor="#000000"
-        android:textSize="36sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        tools:layout_editor_absoluteX="87dp" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="176dp"
-        android:layout_height="176dp"
-        android:layout_marginTop="20dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/dev"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        tools:layout_editor_absoluteX="118dp" />
-
     <LinearLayout
-        android:id="@+id/linearLayout3"
+        android:id="@+id/reylqs9eyjfc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="50dp"
-        android:background="@drawable/card"
-        android:elevation="4dp"
-        android:orientation="vertical"
-        android:paddingHorizontal="13dp"
-        android:paddingVertical="27dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/searchbak"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:layout_editor_absoluteX="18dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/rh01d40rsjcj"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/search" />
 
         <TextView
+            android:id="@+id/rti3jhgmwfch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
-            android:text="Name : Shakya Karunarathna"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp" />
+            android:layout_weight="1"
+            android:text="Search"
+            android:textColor="#A0A3BD"
+            android:textSize="14sp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
-            android:text="ST ID : 2020T00884"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
-            android:text="Role :  Mobile App Designer"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Contact : \nShakyashehan@gmail.com"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp" />
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/r9ndl8lj6r09"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon" />
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:text="Version 1.0"
-        android:textColor="#505050"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
