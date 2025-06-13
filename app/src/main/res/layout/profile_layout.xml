@@ -29,7 +29,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/r1cm82bu8pzph"
+                android:id="@+id/username"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="22dp"
@@ -38,7 +38,7 @@
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/r13l8w8jb4j3n"
+                android:id="@+id/email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
@@ -64,7 +64,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/r43pmstoh6ny"
+                    android:id="@+id/password"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text=". . . . . . . "
@@ -146,23 +146,28 @@
         android:id="@+id/imageView3"
         android:layout_width="176dp"
         android:layout_height="176dp"
+        android:layout_marginStart="118dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="117dp"
         android:scaleType="fitXY"
         android:src="@drawable/avatar"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        tools:layout_editor_absoluteX="118dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/dev"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
         android:text="Version 1.0"
         android:textColor="#505050"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="760dp" />
+        app:layout_constraintTop_toBottomOf="@+id/rm9t6fbnk4ls" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -215,6 +220,7 @@
 
         <!-- Home -->
         <LinearLayout
+            android:id="@+id/home"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"

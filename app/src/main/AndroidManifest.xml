@@ -28,6 +28,7 @@
         <activity android:name=".Login_Activity" />
         <activity android:name=".Home_Activity" />
         <activity android:name=".Signup_Activity" />
+        <activity android:name=".Profile_Activity" />
 
     </application>
 
