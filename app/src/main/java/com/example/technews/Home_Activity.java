@@ -1,13 +1,12 @@
 package com.example.technews;
 
-import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -19,11 +18,8 @@ import com.google.firebase.firestore.QueryDocumentSnapshot;
 public class Home_Activity extends AppCompatActivity {
 
     private FirebaseFirestore db;
-    private LinearLayout newsContainer;
+    private LinearLayout newsContainer,profile;
 
-    ImageView avatarImageView;
-
-    @SuppressLint("MissingSuperCall")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,15 +29,17 @@ public class Home_Activity extends AppCompatActivity {
         db = FirebaseFirestore.getInstance();
 
         newsContainer = findViewById(R.id.newsContainer);
+        profile = findViewById(R.id.profile);
 
-        loadNews();
+        fetchNews();
+        clickProfile();
 
     }
 
 
 
 
-    private void loadNews() {
+    private void fetchNews() {
         db.collection("news")
                 .get()
                 .addOnSuccessListener(queryDocumentSnapshots -> {
@@ -53,10 +51,7 @@ public class Home_Activity extends AppCompatActivity {
 
                         addNewsCard(title, date, content, imageUrl);
                     }
-                })
-                .addOnFailureListener(e ->
-                        Toast.makeText(Home_Activity.this, "Failed to load news", Toast.LENGTH_SHORT).show()
-                );
+                });
     }
 
     private void addNewsCard(String title, String date, String content, String imageUrl) {
@@ -82,6 +77,10 @@ public class Home_Activity extends AppCompatActivity {
         }
 
         newsContainer.addView(cardView);
+    }
+
+    private void clickProfile() {
+        profile.setOnClickListener(v -> startActivity(new Intent(this, Profile_Activity.class)));
     }
 
 }

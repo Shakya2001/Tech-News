@@ -113,6 +113,7 @@
 
         <!-- Home -->
         <LinearLayout
+            android:id="@+id/homePage"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -191,6 +192,7 @@
 
         <!-- Profile -->
         <LinearLayout
+            android:id="@+id/profile"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
