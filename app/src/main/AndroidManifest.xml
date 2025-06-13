@@ -24,6 +24,10 @@
             </intent-filter>
 
         </activity>
+                <activity android:name=".Main_Activity" />
+        <activity android:name=".Login_Activity" />
+        <activity android:name=".Home_Activity" />
+        <activity android:name=".Signup_Activity" />
 
     </application>
 

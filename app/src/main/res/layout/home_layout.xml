@@ -14,6 +14,7 @@
         app:layout_constraintTop_toBottomOf="@+id/reylqs9eyjfc">
 
         <LinearLayout
+            android:id="@+id/newsContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical" />
