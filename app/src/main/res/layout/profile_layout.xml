@@ -5,62 +5,164 @@
     android:layout_height="match_parent"
     android:background="#EFF8FF">
 
-    <ScrollView
-        android:layout_width="412dp"
-        android:layout_height="784dp"
-        android:layout_marginTop="10dp"
+    <LinearLayout
+        android:id="@+id/rm9t6fbnk4ls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/profile_card"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:paddingVertical="28dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/reylqs9eyjfc">
+        app:layout_constraintTop_toBottomOf="@+id/imageView3">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:id="@+id/rug9im6ttg8m"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
+            android:layout_marginHorizontal="28dp"
+            android:layout_marginBottom="29dp"
+            android:orientation="vertical">
 
-    <LinearLayout
-        android:id="@+id/reylqs9eyjfc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="18dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/searchbak"
-        android:clickable="true"
-        android:focusable="true"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:paddingHorizontal="10dp"
-        android:paddingVertical="5dp"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        tools:layout_editor_absoluteX="18dp">
+            <TextView
+                android:id="@+id/r1cm82bu8pzph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="22dp"
+                android:text="Username : Lahiru12"
+                android:textColor="#000000"
+                android:textSize="20sp" />
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/rh01d40rsjcj"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_marginEnd="10dp"
-            android:clickable="true"
-            android:scaleType="fitXY"
-            android:src="@drawable/search" />
+            <TextView
+                android:id="@+id/r13l8w8jb4j3n"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Email : Lahiru@gmail.com"
+                android:textColor="#000000"
+                android:textSize="20sp" />
 
-        <TextView
-            android:id="@+id/rti3jhgmwfch"
-            android:layout_width="match_parent"
+            <LinearLayout
+                android:id="@+id/r0xen95mfjixq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/rgrcimielzks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="9dp"
+                    android:text="Password : "
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/r43pmstoh6ny"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text=". . . . . . . "
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rjhmdc5uoqg9"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Search"
-            android:textColor="#A0A3BD"
-            android:textSize="14sp" />
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="28dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/r9ndl8lj6r09"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:clickable="true"
-            android:scaleType="fitXY"
-            android:src="@drawable/icon" />
+            <LinearLayout
+                android:id="@+id/editinfo"
+                android:layout_width="95dp"
+                android:layout_height="37dp"
+                android:layout_marginEnd="79dp"
+                android:background="@drawable/profile_buttons"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="8dp">
+
+                <TextView
+                    android:id="@+id/rlcpujpnp4gk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Edit Info"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/signout"
+                android:layout_width="95dp"
+                android:layout_height="37dp"
+                android:background="@drawable/profile_buttons"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:paddingVertical="7dp"
+                android:paddingLeft="11dp"
+                android:paddingRight="1dp">
+
+                <TextView
+                    android:id="@+id/ril8vsvkay4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Out"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="57dp"
+        android:text="User Info"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="176dp"
+        android:layout_height="176dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/avatar"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:layout_editor_absoluteX="118dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Version 1.0"
+        android:textColor="#505050"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="760dp" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -74,8 +176,9 @@
         android:paddingVertical="4dp"
         android:paddingLeft="122dp"
         android:paddingRight="17dp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="27dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:layout_width="129dp"
