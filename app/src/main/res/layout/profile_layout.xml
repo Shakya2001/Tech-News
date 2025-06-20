@@ -161,7 +161,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:clickable="true"
-        android:text="Version 1.0"
+        android:text="Developer Info"
         android:textColor="#505050"
         android:textSize="20sp"
         android:textStyle="bold"
